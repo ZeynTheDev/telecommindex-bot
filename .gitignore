@@ -149,14 +149,20 @@ activemq-data/
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# Environment variables and secrets
 .env
-.envrc
-.venv
+.env.*
+!.env.example
 env/
-venv/
 ENV/
 env.bak/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+.venv
+venv/
 venv.bak/
 
 # Spyder project settings
@@ -218,3 +224,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Log files
+*.log
+
+# Local uploads
+storage/uploads/
+
+# IDE
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
